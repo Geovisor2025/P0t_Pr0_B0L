@@ -22,6 +22,16 @@
       justify-content: center;
       height: 100%;
     }
+
+
+      .logo {
+  grid-column: 1 / -1;    /* Hace que ocupe ambas columnas del grid */
+  justify-self: center;   /* Centra horizontalmente en CSS Grid */
+  display: block;
+  margin-bottom: 20px;    /* Espacio entre el logo y el título */
+  max-width: 300px;       /* Ajusta al tamaño que prefieras */
+  height: auto;
+}
     .section {
       background: rgba(255,255,255,0.4);
       padding: 30px;
@@ -81,6 +91,7 @@
 <body>
   <div class="container">
     <div class="section">
+      <img src="images/cna.png" alt="Logo" class="logo">
       <h3>Regiones y Zonas Potenciales Agroproductoras del Estado Plurinacional de Bolivia</h3>
 
        <div class="dept-item">
